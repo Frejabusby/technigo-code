@@ -139,10 +139,12 @@ a:hover {
 
 /* Responsive */
 @media only screen and (max-width: 991px) {
+  .container {
+    width: 80%;
+  }
   .container-box {
     display: block;
   }
-
   .log-in-form, .sign-up-container {
   width: 94%;
   }
@@ -150,6 +152,6 @@ a:hover {
 
 @media only screen and (max-width: 500px) {
   .container {
-    width: 85%
+    width: 90%
   }
 }
