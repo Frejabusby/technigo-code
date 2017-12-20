@@ -1,0 +1,155 @@
+/* Reset CSS for all browsers */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+  background-color: #e9ebee;
+}
+
+h2 {
+  color: #69696b;
+  font-size: 1.4em;
+  font-family: Arial, sans-serif;
+  margin-bottom: 15px;
+}
+
+p, lable {
+  color: #909090;
+  font-family: Arial, sans-serif;
+  font-size: 0.8em;
+}
+
+a {
+  font-family: Arial, sans-serif;
+  font-size: 0.8em;
+  text-decoration: none;
+  color: #33559c;
+}
+
+a:hover {
+  font-size: 0.9em;
+}
+
+.container {
+  width: 60%;
+  margin: auto;
+  margin-top: 10%;
+}
+
+.logo-header {
+  display: flex;
+  background-color: #4266b2;
+  height: 50px;
+  margin-top: 10%;
+  padding: 15px 0px;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.logo {
+  max-width: 70%;
+  height: 70%;
+  margin: auto;
+}
+
+.container-box {
+  display: flex;
+  border: solid 1px #d7dade;
+  border-top: none;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.log-in-form, .sign-up-container {
+  width: 44%;
+  padding: 5% 3%;
+}
+
+.log-in-form {
+  background-color: #fff;
+  border-radius: 0px 0px 0px 4px;
+}
+
+.sign-up-container {
+  background-color: #f6f7f9;
+  border-radius: 0px 0px 4px 0px;
+}
+
+/* Input fields */
+.email-phone-input, .password-input, .button-log-in, .button-sign-in {
+  display: block;
+  height: 35px;
+  margin-top: 15px;
+}
+
+.email-phone-input, .password-input {
+  width: calc(100% - 14px);
+  padding-left: 10px;
+  border: solid 1px #d7dade;
+  border-radius: 4px;
+}
+
+.email-phone-input:focus, .password-input:focus, .button-log-in:focus, .button-sign-in:focus{
+  outline: none;
+}
+
+.email-phone-input::placeholder, .password-input::placeholder {
+  color: #69696b;
+}
+
+.email-phone-input:focus::placeholder, .password-input:focus::placeholder {
+  color: #d7dade;
+}
+
+.checkbox-logged-in {
+  margin-top: 15px;
+  border: solid 1px #d7dade;
+}
+
+.button-log-in, .button-sign-in {
+  background-color: #4266b2;
+  color: #fff;
+  padding: 0px;
+  margin-bottom: 10px;
+  border: none;
+  width: 100%;
+  font-size: 1.1em;
+  border-radius: 4px;
+}
+
+.button-log-in:hover, .button-sign-in:hover {
+  background-color: #33559c;
+}
+
+/* Responsive */
+@media only screen and (max-width: 991px) {
+  .container-box {
+    display: block;
+  }
+
+  .log-in-form, .sign-up-container {
+  width: 94%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    width: 85%
+  }
+}
